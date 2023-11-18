@@ -30,8 +30,8 @@ class Board :
                     color = Circle_Color if self.Squares[0][col] == 2 else Cross_Color
                     iPos = (col * Square_Size + Square_Size //2, 20)
                     fPos = (col * Square_Size + Square_Size //2, HEIGHT - 20)
-                    pygself.Squares[0][col]ame.draw.line(screen, color, iPos, fPos, Line_width)
-                return 
+                    pygame.draw.line(screen, color, iPos, fPos, Line_width)
+                return self.Squares[0][col]
             
         
         #Horizontal Wins
